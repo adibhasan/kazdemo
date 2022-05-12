@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.kaz.producer.dto.Message;
+import com.kaz.producer.dto.MessageDto;
 import com.kaz.producer.service.SendMessage;
 
 @RestController
@@ -21,7 +21,7 @@ public class Producer {
 	
 	
 	@PostMapping("/message")
-	public Message sendMessage(@RequestBody Message message) {
+	public MessageDto sendMessage(@RequestBody MessageDto message) {
 		
 		try {
 			ObjectMapper mapper = new ObjectMapper();

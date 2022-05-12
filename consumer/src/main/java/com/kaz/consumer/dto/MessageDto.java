@@ -1,8 +1,8 @@
-package com.kaz.producer.dto;
+package com.kaz.consumer.dto;
 
 import java.io.Serializable;
 
-public class Message implements Serializable {
+public class MessageDto implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	private String messageDataUrl;
